@@ -67,6 +67,8 @@ jobs:
                 public float AvailableWater;
 
                 public void DrawWater(float amount) { }
+                public float? DrawHydrogen(float amount) { return 0f; }
+                public float? DrawOxygen(float amount) { return 0f; }
                 public float AddHydrogen(float amount) { return 0f; }
                 public float AddOxygen(float amount) { return 0f; }
             }
