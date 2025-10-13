@@ -18,6 +18,13 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
   - More efficient than chemfuel generators
   - Acts as battery + generator hybrid
 
+- **Oxygen Generators** - High-output power by burning oxygen
+  - Tiny (1x1): 1200W output
+  - Small (1x2): 2400W output
+  - Medium (2x2): 4800W output
+  - 2x power output compared to chemfuel/wood
+  - Generates significant heat (requires cooling)
+
 - **Oxygen Pumps** - Life support for gravships (Odyssey DLC)
   - Optional integration (not required)
   - Provides O2 to enclosed spaces
@@ -32,8 +39,10 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
 
 1. **Build Electrolysis Chamber** - Connects to water pipes, consumes power
 2. **Split Water** - Produces H2 and O2, stores in internal tanks
-3. **Distribute Gases** - Pipe hydrogen to fuel cells, oxygen to pumps
-4. **Generate Power** - Fuel cells convert H2 to electricity efficiently
+3. **Distribute Gases** - Pipe hydrogen to fuel cells, oxygen to generators/pumps
+4. **Generate Power** - Two options:
+   - **Fuel cells:** Convert H2 to clean electricity (no heat)
+   - **Oxygen generators:** Burn O2 for 2x power output (high heat)
 5. **Support Life** - Oxygen pumps supply breathable air to gravships
 
 **Chemistry:** 2H₂O → 2H₂ + O₂ (realistic stoichiometry)
@@ -64,23 +73,46 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
 - Cost: 4000 research points
 
 **Buildings:**
-- **Small Chamber:** 50 Steel, 2 Components (500W, 100 O2 / 200 H2 storage)
-- **Medium Chamber:** 100 Steel, 4 Components (1500W, 300 O2 / 600 H2 storage)
-- **Large Chamber:** 200 Steel, 8 Components (3000W, 600 O2 / 1200 H2 storage)
-- **Small H2 Fuel Cell:** 75 Steel, 5 Components (1200W output, 40 H2 storage, 1x2)
-- **Large H2 Fuel Cell:** 150 Steel, 8 Components (3000W output, 100 H2 storage, 2x2)
+
+*Electrolysis Chambers:*
+- **Small:** 50 Steel, 2 Components (500W, 100 O2 / 200 H2 storage)
+- **Medium:** 100 Steel, 4 Components (1500W, 300 O2 / 600 H2 storage)
+- **Large:** 200 Steel, 8 Components (3000W, 600 O2 / 1200 H2 storage)
+
+*Hydrogen Fuel Cells:*
+- **Small (1x2):** 75 Steel, 5 Components (1200W output, 40 H2 storage)
+- **Large (2x2):** 150 Steel, 8 Components (3000W output, 100 H2 storage)
+
+*Oxygen Generators:*
+- **Tiny (1x1):** 40 Steel, 2 Components (1200W output, 10 heat/sec)
+- **Small (1x2):** 75 Steel, 4 Components (2400W output, 20 heat/sec)
+- **Medium (2x2):** 125 Steel, 6 Components (4800W output, 40 heat/sec)
+
+*Other:*
 - **O2 Pump:** 40 Steel, 3 Components (100W consumption)
 
 ## Game Balance
 
 **Power Generation:**
-- H2 Fuel Cell: 1200W, ~30% more efficient than chemfuel per unit
-- Acts as long-term energy storage
-- Requires significant investment in electrolysis infrastructure
+- **H2 Fuel Cells:** ~30% more efficient than chemfuel per unit
+  - Acts as long-term energy storage
+  - No heat generation
+  - Best for stable, clean power
+
+- **O2 Generators:** 2x power output vs chemfuel/wood per unit
+  - Immediate high power output
+  - Generates significant heat (10-40 heat/sec)
+  - Great for cold biomes, problematic in hot climates
+  - Requires cooling infrastructure
+
+**Trade-offs:**
+- Fuel cells: Efficient, clean, but requires H2 piping
+- Oxygen generators: Powerful but hot, requires O2 piping + cooling
 
 **Resource Flow:**
 - Water → Electrolysis → H2 + O2
-- H2 → Fuel Cells → Power
+- H2 → Fuel Cells → Clean Power (no heat)
+- O2 → Oxygen Generators → High Power (with heat)
 - O2 → Oxygen Pumps → Life Support
 
 ## Building from Source

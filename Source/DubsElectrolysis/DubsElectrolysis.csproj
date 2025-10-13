@@ -47,12 +47,15 @@
     <Compile Include="Building_ElectrolysisChamber.cs" />
     <Compile Include="Building_HydrogenFuelCell.cs" />
     <Compile Include="Building_OxygenPump.cs" />
+    <Compile Include="Building_OxygenGenerator.cs" />
     <Compile Include="CompElectrolyzer.cs" />
     <Compile Include="CompProperties_Electrolyzer.cs" />
     <Compile Include="CompHydrogenFuelCell.cs" />
     <Compile Include="CompProperties_HydrogenFuelCell.cs" />
     <Compile Include="CompOxygenPump.cs" />
     <Compile Include="CompProperties_OxygenPump.cs" />
+    <Compile Include="CompOxygenGenerator.cs" />
+    <Compile Include="CompProperties_OxygenGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
