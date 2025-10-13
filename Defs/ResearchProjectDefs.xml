@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Electrolysis</defName>
+		<label>electrolysis</label>
+		<description>Split water into hydrogen and oxygen through electrolysis. Unlock electrolysis chambers that produce clean-burning hydrogen for fuel cells and oxygen for life support systems. Requires significant power input but provides efficient long-term energy storage.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>Microelectronics</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>
