@@ -105,8 +105,9 @@ namespace DubsElectrolysis
         {
             string text = "";
 
+            // Status
             if (isGeneratingPower)
-                text += "Generating power\n";
+                text += "Power output: " + (powerPlant?.Props.PowerConsumption * -1).ToString("F0") + " W\n";
             else if (h2Stored <= 0f)
                 text += "No hydrogen fuel\n";
             else if (flickable != null && !flickable.SwitchIsOn)
@@ -114,9 +115,36 @@ namespace DubsElectrolysis
             else if (breakdownable != null && breakdownable.BrokenDown)
                 text += "Broken down\n";
 
-            text += $"H2 Fuel: {h2Stored:F1}/{Props.h2StorageCapacity:F0}";
+            // Fuel storage
+            float percentage = (h2Stored / Props.h2StorageCapacity) * 100f;
+            text += $"H2 Fuel: {h2Stored:F1}/{Props.h2StorageCapacity:F0} ({percentage:F0}%)\n";
 
-            return text;
+            // Consumption rate and fuel remaining
+            if (isGeneratingPower && Props.h2ConsumptionPerTick > 0f)
+            {
+                float consumptionPerDay = Props.h2ConsumptionPerTick * 60000f; // ticks per day
+                text += $"Fuel consumption: {consumptionPerDay:F1}/day\n";
+
+                float daysRemaining = h2Stored / consumptionPerDay;
+                if (daysRemaining < 1f)
+                {
+                    float hoursRemaining = daysRemaining * 24f;
+                    text += $"Fuel remaining: {hoursRemaining:F1} hours";
+                }
+                else
+                {
+                    text += $"Fuel remaining: {daysRemaining:F1} days";
+                }
+            }
+            else if (!isGeneratingPower && h2Stored > 0f)
+            {
+                // Show potential runtime when not generating
+                float consumptionPerDay = Props.h2ConsumptionPerTick * 60000f;
+                float daysRemaining = h2Stored / consumptionPerDay;
+                text += $"Potential runtime: {daysRemaining:F1} days";
+            }
+
+            return text.TrimEnd('\n');
         }
     }
 }

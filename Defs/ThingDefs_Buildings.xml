@@ -7,6 +7,7 @@
 		<label>small electrolysis chamber</label>
 		<description>A compact electrolysis unit that splits water into hydrogen and oxygen gas. Consumes 500W of power and water from the pipe network. Produces hydrogen for fuel cells and oxygen for life support. Automatically shuts off when storage tanks are full. Internal storage: 100 O2, 200 H2.</description>
 		<thingClass>DubsElectrolysis.Building_ElectrolysisChamber</thingClass>
+		<designatorDropdown>ElectrolysisChamber</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Production/ElectrolysisChamberSmall</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -75,6 +76,7 @@
 		<defName>ElectrolysisChamberMedium</defName>
 		<label>electrolysis chamber</label>
 		<description>A standard electrolysis unit that splits water into hydrogen and oxygen gas. Consumes 1500W of power and water from the pipe network. Produces hydrogen for fuel cells and oxygen for life support. Automatically shuts off when storage tanks are full. Internal storage: 300 O2, 600 H2.</description>
+		<designatorDropdown>ElectrolysisChamber</designatorDropdown>
 		<thingClass>DubsElectrolysis.Building_ElectrolysisChamber</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/ElectrolysisChamberMedium</texPath>
@@ -145,6 +147,7 @@
 		<label>large electrolysis chamber</label>
 		<description>An industrial-scale electrolysis unit that splits water into hydrogen and oxygen gas. Consumes 3000W of power and water from the pipe network. Produces hydrogen for fuel cells and oxygen for life support. Automatically shuts off when storage tanks are full. Internal storage: 600 O2, 1200 H2.</description>
 		<thingClass>DubsElectrolysis.Building_ElectrolysisChamber</thingClass>
+		<designatorDropdown>ElectrolysisChamber</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Production/ElectrolysisChamberLarge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -214,6 +217,7 @@
 		<label>small hydrogen fuel cell</label>
 		<description>A compact power generation unit that converts hydrogen gas into electricity through electrochemical reactions. More efficient than chemfuel generators and produces no pollution. Requires connection to hydrogen pipe network. Stores up to 40 units of hydrogen and generates 1200W continuously while fuel is available. Acts as both a battery and generator.</description>
 		<thingClass>DubsElectrolysis.Building_HydrogenFuelCell</thingClass>
+		<designatorDropdown>HydrogenFuelCell</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Power/HydrogenFuelCellSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -274,6 +278,7 @@
 		<label>hydrogen fuel cell</label>
 		<description>A larger power generation unit that converts hydrogen gas into electricity through electrochemical reactions. More efficient than chemfuel generators and produces no pollution. Requires connection to hydrogen pipe network. Stores up to 100 units of hydrogen and generates 3000W continuously while fuel is available. Acts as both a battery and generator.</description>
 		<thingClass>DubsElectrolysis.Building_HydrogenFuelCell</thingClass>
+		<designatorDropdown>HydrogenFuelCell</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Power/HydrogenFuelCellLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

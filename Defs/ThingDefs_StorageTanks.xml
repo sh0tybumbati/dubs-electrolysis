@@ -9,6 +9,7 @@
 		<label>tiny hydrogen tank</label>
 		<description>A small pressurized tank for storing hydrogen gas. Connects to the hydrogen pipe network and acts as a buffer between production and consumption. No power required. Storage: 100 H2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/HydrogenTankTiny</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -61,6 +62,7 @@
 		<label>small hydrogen tank</label>
 		<description>A pressurized tank for storing hydrogen gas. Connects to the hydrogen pipe network and acts as a buffer between production and consumption. No power required. Storage: 300 H2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/HydrogenTankSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -113,6 +115,7 @@
 		<label>hydrogen tank</label>
 		<description>A large pressurized tank for storing hydrogen gas. Connects to the hydrogen pipe network and acts as a buffer between production and consumption. No power required. Storage: 600 H2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/HydrogenTankMedium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -167,6 +170,7 @@
 		<label>large hydrogen tank</label>
 		<description>A massive industrial pressurized tank for storing hydrogen gas. Connects to the hydrogen pipe network and acts as a buffer between production and consumption. No power required. Storage: 1500 H2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/HydrogenTankLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -223,6 +227,7 @@
 		<label>tiny oxygen tank</label>
 		<description>A small pressurized tank for storing oxygen gas. Connects to the oxygen pipe network and acts as a buffer between production and consumption. No power required. Storage: 50 O2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/OxygenTankTiny</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -275,6 +280,7 @@
 		<label>small oxygen tank</label>
 		<description>A pressurized tank for storing oxygen gas. Connects to the oxygen pipe network and acts as a buffer between production and consumption. No power required. Storage: 150 O2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/OxygenTankSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -327,6 +333,7 @@
 		<label>oxygen tank</label>
 		<description>A large pressurized tank for storing oxygen gas. Connects to the oxygen pipe network and acts as a buffer between production and consumption. No power required. Storage: 300 O2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/OxygenTankMedium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -381,6 +388,7 @@
 		<label>large oxygen tank</label>
 		<description>A massive industrial pressurized tank for storing oxygen gas. Connects to the oxygen pipe network and acts as a buffer between production and consumption. No power required. Storage: 750 O2.</description>
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
+		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Storage/OxygenTankLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

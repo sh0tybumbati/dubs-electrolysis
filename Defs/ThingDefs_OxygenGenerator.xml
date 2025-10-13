@@ -7,6 +7,7 @@
 		<label>tiny oxygen generator</label>
 		<description>A compact power generator that burns pure oxygen to produce electricity. Generates twice the power per unit fuel compared to chemfuel or wood, but produces significant heat. Requires connection to oxygen pipe network. Output: 1200W. Warning: Generates substantial heat - ventilation recommended.</description>
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
+		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Power/OxygenGeneratorTiny</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -71,6 +72,7 @@
 		<label>oxygen generator</label>
 		<description>A power generator that burns pure oxygen to produce electricity. Generates twice the power per unit fuel compared to chemfuel or wood, but produces significant heat. Requires connection to oxygen pipe network. Output: 2400W. Warning: Generates substantial heat - ventilation or cooling strongly recommended.</description>
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
+		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Power/OxygenGeneratorSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -135,6 +137,7 @@
 		<label>large oxygen generator</label>
 		<description>A large power generator that burns pure oxygen to produce electricity. Generates twice the power per unit fuel compared to chemfuel or wood, but produces significant heat. Requires connection to oxygen pipe network. Output: 4800W. Warning: Generates extreme heat - dedicated cooling system required.</description>
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
+		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Building/Power/OxygenGeneratorMedium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

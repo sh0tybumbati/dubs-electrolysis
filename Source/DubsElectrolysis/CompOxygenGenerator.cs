@@ -83,19 +83,33 @@ namespace DubsElectrolysis
 
         public override string CompInspectStringExtra()
         {
-            if (!isGenerating)
+            string text = "";
+
+            // Status and power output
+            if (isGenerating)
+            {
+                text += "Power output: " + (powerPlant?.Props.PowerConsumption * -1).ToString("F0") + " W\n";
+
+                // Oxygen consumption rate
+                float consumptionPerDay = Props.o2ConsumptionPerTick * 60000f; // ticks per day
+                text += $"O2 consumption: {consumptionPerDay:F1}/day\n";
+
+                // Efficiency note
+                text += "Efficiency: 2x vs chemfuel";
+            }
+            else
             {
                 if (flickable != null && !flickable.SwitchIsOn)
-                    return "Switched off";
+                    text += "Switched off";
                 else if (breakdownable != null && breakdownable.BrokenDown)
-                    return "Broken down";
+                    text += "Broken down";
                 else if (oxygenPipe == null)
-                    return "No oxygen connection";
+                    text += "No oxygen connection";
                 else
-                    return "No oxygen available";
+                    text += "No oxygen available";
             }
 
-            return "Burning oxygen - generating power";
+            return text.TrimEnd('\n');
         }
     }
 }
