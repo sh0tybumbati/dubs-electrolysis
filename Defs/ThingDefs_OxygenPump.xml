@@ -43,8 +43,9 @@
 				<basePowerConsumption>100</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_OxygenPump">
 				<o2ConsumptionPerTick>0.02</o2ConsumptionPerTick>

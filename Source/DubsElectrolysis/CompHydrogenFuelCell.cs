@@ -1,6 +1,5 @@
 using RimWorld;
 using Verse;
-using DubsBadHygiene;
 
 namespace DubsElectrolysis
 {
@@ -9,7 +8,7 @@ namespace DubsElectrolysis
         private CompProperties_HydrogenFuelCell Props => (CompProperties_HydrogenFuelCell)props;
 
         private CompPowerPlant powerPlant;
-        private CompPipe hydrogenPipe;
+        private CompGasPipe hydrogenPipe;
         private CompFlickable flickable;
         private CompBreakdownable breakdownable;
 
@@ -23,16 +22,8 @@ namespace DubsElectrolysis
             flickable = parent.GetComp<CompFlickable>();
             breakdownable = parent.GetComp<CompBreakdownable>();
 
-            // Get hydrogen pipe
-            var pipes = parent.GetComps<CompPipe>();
-            foreach (var pipe in pipes)
-            {
-                if (pipe.pipeNet?.pipeType == PipeType.Hydrogen)
-                {
-                    hydrogenPipe = pipe;
-                    break;
-                }
-            }
+            // Get hydrogen gas pipe
+            hydrogenPipe = parent.GetComp<CompGasPipe>();
         }
 
         public override void CompTick()
@@ -62,11 +53,11 @@ namespace DubsElectrolysis
                 h2Stored -= consumed;
                 isGeneratingPower = true;
 
-                // Request more hydrogen from pipe network
-                if (hydrogenPipe != null && h2Stored < Props.h2StorageCapacity)
+                // Request more hydrogen from gas network
+                if (hydrogenPipe != null && hydrogenPipe.gasNet != null && h2Stored < Props.h2StorageCapacity)
                 {
                     float needed = Props.h2StorageCapacity - h2Stored;
-                    float received = hydrogenPipe.pipeNet?.DrawHydrogen(needed) ?? 0f;
+                    float received = hydrogenPipe.gasNet.DrawGas(needed) ?? 0f;
                     h2Stored += received;
                     if (h2Stored > Props.h2StorageCapacity)
                         h2Stored = Props.h2StorageCapacity;
@@ -76,11 +67,11 @@ namespace DubsElectrolysis
             {
                 isGeneratingPower = false;
 
-                // Still try to fill from pipe network when not generating
-                if (hydrogenPipe != null && h2Stored < Props.h2StorageCapacity)
+                // Still try to fill from gas network when not generating
+                if (hydrogenPipe != null && hydrogenPipe.gasNet != null && h2Stored < Props.h2StorageCapacity)
                 {
                     float needed = Props.h2StorageCapacity - h2Stored;
-                    float received = hydrogenPipe.pipeNet?.DrawHydrogen(needed) ?? 0f;
+                    float received = hydrogenPipe.gasNet.DrawGas(needed) ?? 0f;
                     h2Stored += received;
                     if (h2Stored > Props.h2StorageCapacity)
                         h2Stored = Props.h2StorageCapacity;

@@ -50,11 +50,13 @@
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Hydrogen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_Electrolyzer">
 				<waterConsumptionPerTick>0.1</waterConsumptionPerTick>
@@ -120,11 +122,13 @@
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Hydrogen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_Electrolyzer">
 				<waterConsumptionPerTick>0.3</waterConsumptionPerTick>
@@ -190,11 +194,13 @@
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Hydrogen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_Electrolyzer">
 				<waterConsumptionPerTick>0.6</waterConsumptionPerTick>

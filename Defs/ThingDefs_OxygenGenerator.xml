@@ -52,8 +52,9 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>10</heatPerSecond>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_OxygenGenerator">
 				<o2ConsumptionPerTick>0.05</o2ConsumptionPerTick>
@@ -117,8 +118,9 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>20</heatPerSecond>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_OxygenGenerator">
 				<o2ConsumptionPerTick>0.1</o2ConsumptionPerTick>
@@ -182,8 +184,9 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>40</heatPerSecond>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Oxygen</gasType>
+				<storageCapacity>0</storageCapacity>
 			</li>
 			<li Class="DubsElectrolysis.CompProperties_OxygenGenerator">
 				<o2ConsumptionPerTick>0.2</o2ConsumptionPerTick>

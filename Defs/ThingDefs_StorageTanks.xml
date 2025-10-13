@@ -41,10 +41,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Hydrogen</gasType>
 				<storageCapacity>100</storageCapacity>
 			</li>
@@ -94,10 +91,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Hydrogen</gasType>
 				<storageCapacity>300</storageCapacity>
 			</li>
@@ -149,10 +143,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Hydrogen</gasType>
 				<storageCapacity>600</storageCapacity>
 			</li>
@@ -204,10 +195,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Hydrogen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Hydrogen</gasType>
 				<storageCapacity>1500</storageCapacity>
 			</li>
@@ -259,10 +247,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Oxygen</gasType>
 				<storageCapacity>50</storageCapacity>
 			</li>
@@ -312,10 +297,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Oxygen</gasType>
 				<storageCapacity>150</storageCapacity>
 			</li>
@@ -367,10 +349,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Oxygen</gasType>
 				<storageCapacity>300</storageCapacity>
 			</li>
@@ -422,10 +401,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="DubsBadHygiene.CompProperties_Pipe">
-				<mode>Oxygen</mode>
-			</li>
-			<li Class="DubsElectrolysis.CompProperties_GasStorage">
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
 				<gasType>Oxygen</gasType>
 				<storageCapacity>750</storageCapacity>
 			</li>

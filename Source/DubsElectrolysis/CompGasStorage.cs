@@ -1,5 +1,4 @@
 using Verse;
-using DubsBadHygiene;
 
 namespace DubsElectrolysis
 {
@@ -7,28 +6,15 @@ namespace DubsElectrolysis
     {
         private CompProperties_GasStorage Props => (CompProperties_GasStorage)props;
 
-        private CompPipe gasPipe;
+        private CompGasPipe gasPipe;
         public float storedGas = 0f;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
 
-            // Get the appropriate pipe based on gas type
-            var pipes = parent.GetComps<CompPipe>();
-            foreach (var pipe in pipes)
-            {
-                if (Props.gasType == "Hydrogen" && pipe.pipeNet?.pipeType == PipeType.Hydrogen)
-                {
-                    gasPipe = pipe;
-                    break;
-                }
-                else if (Props.gasType == "Oxygen" && pipe.pipeNet?.pipeType == PipeType.Oxygen)
-                {
-                    gasPipe = pipe;
-                    break;
-                }
-            }
+            // Get gas pipe - storage capacity is declared in the CompGasPipe properties
+            gasPipe = parent.GetComp<CompGasPipe>();
         }
 
         public override void CompTick()
@@ -38,31 +24,11 @@ namespace DubsElectrolysis
             if (!parent.IsHashIntervalTick(60))
                 return;
 
-            if (gasPipe == null || gasPipe.pipeNet == null)
+            if (gasPipe == null || gasPipe.gasNet == null)
                 return;
 
-            // Try to fill from network if not full
-            if (storedGas < Props.storageCapacity)
-            {
-                float needed = Props.storageCapacity - storedGas;
-                float received = 0f;
-
-                if (Props.gasType == "Hydrogen")
-                    received = gasPipe.pipeNet.DrawHydrogen(needed) ?? 0f;
-                else if (Props.gasType == "Oxygen")
-                    received = gasPipe.pipeNet.DrawOxygen(needed) ?? 0f;
-
-                storedGas += received;
-                if (storedGas > Props.storageCapacity)
-                    storedGas = Props.storageCapacity;
-            }
-
-            // Provide gas back to network when needed
-            if (storedGas > 0f)
-            {
-                // This allows the network to draw from storage tanks
-                // The actual drawing is handled by the pipe network when consumers request gas
-            }
+            // Storage is now handled by the GasNet through CompGasPipe's storage capacity
+            // No need to manually transfer - the network manages it automatically
         }
 
         public float DrawGas(float amount)

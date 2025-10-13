@@ -1,6 +1,7 @@
 using RimWorld;
 using Verse;
 using DubsBadHygiene;
+using System.Linq;
 
 namespace DubsElectrolysis
 {
@@ -9,9 +10,9 @@ namespace DubsElectrolysis
         private CompProperties_Electrolyzer Props => (CompProperties_Electrolyzer)props;
 
         private CompPowerTrader powerComp;
-        private CompPipe waterPipe;
-        private CompPipe oxygenPipe;
-        private CompPipe hydrogenPipe;
+        private CompPipe waterPipe;  // DBH water pipe
+        private CompGasPipe oxygenPipe;  // Our custom gas pipe
+        private CompGasPipe hydrogenPipe;  // Our custom gas pipe
         private CompFlickable flickable;
 
         public float h2Stored = 0f;
@@ -25,16 +26,25 @@ namespace DubsElectrolysis
             powerComp = parent.GetComp<CompPowerTrader>();
             flickable = parent.GetComp<CompFlickable>();
 
-            // Get pipe components
+            // Get DBH water pipe
             var pipes = parent.GetComps<CompPipe>();
             foreach (var pipe in pipes)
             {
                 if (pipe.pipeNet?.pipeType == PipeType.Water)
+                {
                     waterPipe = pipe;
-                else if (pipe.pipeNet?.pipeType == PipeType.Oxygen)
-                    oxygenPipe = pipe;
-                else if (pipe.pipeNet?.pipeType == PipeType.Hydrogen)
-                    hydrogenPipe = pipe;
+                    break;
+                }
+            }
+
+            // Get our custom gas pipes
+            var gasPipes = parent.GetComps<CompGasPipe>();
+            foreach (var gasPipe in gasPipes)
+            {
+                if (gasPipe.GasType == GasType.Oxygen)
+                    oxygenPipe = gasPipe;
+                else if (gasPipe.GasType == GasType.Hydrogen)
+                    hydrogenPipe = gasPipe;
             }
         }
 
@@ -90,17 +100,17 @@ namespace DubsElectrolysis
 
         private void DistributeGases()
         {
-            // Distribute H2 to hydrogen pipe network
-            if (hydrogenPipe != null && h2Stored > 0f)
+            // Distribute H2 to hydrogen gas network
+            if (hydrogenPipe != null && hydrogenPipe.gasNet != null && h2Stored > 0f)
             {
-                float transferred = hydrogenPipe.pipeNet?.AddHydrogen(h2Stored) ?? 0f;
+                float transferred = hydrogenPipe.gasNet.AddGas(h2Stored);
                 h2Stored -= transferred;
             }
 
-            // Distribute O2 to oxygen pipe network
-            if (oxygenPipe != null && o2Stored > 0f)
+            // Distribute O2 to oxygen gas network
+            if (oxygenPipe != null && oxygenPipe.gasNet != null && o2Stored > 0f)
             {
-                float transferred = oxygenPipe.pipeNet?.AddOxygen(o2Stored) ?? 0f;
+                float transferred = oxygenPipe.gasNet.AddGas(o2Stored);
                 o2Stored -= transferred;
             }
         }

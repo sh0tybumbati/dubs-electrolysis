@@ -1,6 +1,5 @@
 using RimWorld;
 using Verse;
-using DubsBadHygiene;
 
 namespace DubsElectrolysis
 {
@@ -9,7 +8,7 @@ namespace DubsElectrolysis
         private CompProperties_OxygenPump Props => (CompProperties_OxygenPump)props;
 
         private CompPowerTrader powerComp;
-        private CompPipe oxygenPipe;
+        private CompGasPipe oxygenPipe;
         private CompFlickable flickable;
 
         private bool isOperating = false;
@@ -20,16 +19,8 @@ namespace DubsElectrolysis
             powerComp = parent.GetComp<CompPowerTrader>();
             flickable = parent.GetComp<CompFlickable>();
 
-            // Get oxygen pipe
-            var pipes = parent.GetComps<CompPipe>();
-            foreach (var pipe in pipes)
-            {
-                if (pipe.pipeNet?.pipeType == PipeType.Oxygen)
-                {
-                    oxygenPipe = pipe;
-                    break;
-                }
-            }
+            // Get oxygen gas pipe
+            oxygenPipe = parent.GetComp<CompGasPipe>();
         }
 
         public override void CompTick()
@@ -51,9 +42,9 @@ namespace DubsElectrolysis
 
             if (canOperate)
             {
-                // Try to draw oxygen from pipe network
+                // Try to draw oxygen from gas network
                 float needed = Props.o2ConsumptionPerTick;
-                float received = oxygenPipe.pipeNet?.DrawOxygen(needed) ?? 0f;
+                float received = oxygenPipe?.gasNet?.DrawGas(needed) ?? 0f;
 
                 if (received > 0f)
                 {
