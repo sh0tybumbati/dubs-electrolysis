@@ -107,7 +107,7 @@ namespace DubsElectrolysis
 
             // Status
             if (isGeneratingPower)
-                text += "Power output: " + (powerPlant?.Props.PowerConsumption * -1).ToString("F0") + " W\n";
+                text += "Power output: " + ((powerPlant?.Props.PowerConsumption ?? 0f) * -1).ToString("F0") + " W\n";
             else if (h2Stored <= 0f)
                 text += "No hydrogen fuel\n";
             else if (flickable != null && !flickable.SwitchIsOn)
