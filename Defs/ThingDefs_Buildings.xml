@@ -208,14 +208,14 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!-- Hydrogen Fuel Cell -->
+	<!-- Hydrogen Fuel Cell (Small 1x2) -->
 	<ThingDef ParentName="BuildingBase">
-		<defName>HydrogenFuelCell</defName>
-		<label>hydrogen fuel cell</label>
+		<defName>HydrogenFuelCellSmall</defName>
+		<label>small hydrogen fuel cell</label>
 		<description>A compact power generation unit that converts hydrogen gas into electricity through electrochemical reactions. More efficient than chemfuel generators and produces no pollution. Requires connection to hydrogen pipe network. Stores up to 40 units of hydrogen and generates 1200W continuously while fuel is available. Acts as both a battery and generator.</description>
 		<thingClass>DubsElectrolysis.Building_HydrogenFuelCell</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Power/HydrogenFuelCell</texPath>
+			<texPath>Things/Building/Power/HydrogenFuelCellSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 			<damageData>
@@ -266,6 +266,67 @@
 			<li>Electrolysis</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!-- Hydrogen Fuel Cell (Large 2x2) -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>HydrogenFuelCellLarge</defName>
+		<label>hydrogen fuel cell</label>
+		<description>A larger power generation unit that converts hydrogen gas into electricity through electrochemical reactions. More efficient than chemfuel generators and produces no pollution. Requires connection to hydrogen pipe network. Stores up to 100 units of hydrogen and generates 3000W continuously while fuel is available. Acts as both a battery and generator.</description>
+		<thingClass>DubsElectrolysis.Building_HydrogenFuelCell</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/HydrogenFuelCellLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,1.6,1.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>false</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>50</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<canPlaceOverWall>false</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-3000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Hydrogen</mode>
+			</li>
+			<li Class="DubsElectrolysis.CompProperties_HydrogenFuelCell">
+				<h2ConsumptionPerTick>0.125</h2ConsumptionPerTick>
+				<h2StorageCapacity>100</h2StorageCapacity>
+			</li>
+		</comps>
+		<designationCategory>Power</designationCategory>
+		<researchPrerequisites>
+			<li>Electrolysis</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
 </Defs>

@@ -13,8 +13,8 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
   - Internal gas storage tanks
 
 - **Hydrogen Fuel Cells** - Clean, efficient power generation
-  - 1200W continuous output (1x2 size)
-  - Stores 40 units of hydrogen
+  - Small (1x2): 1200W output, 40 H2 storage
+  - Large (2x2): 3000W output, 100 H2 storage
   - More efficient than chemfuel generators
   - Acts as battery + generator hybrid
 
@@ -67,7 +67,8 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
 - **Small Chamber:** 50 Steel, 2 Components (500W, 100 O2 / 200 H2 storage)
 - **Medium Chamber:** 100 Steel, 4 Components (1500W, 300 O2 / 600 H2 storage)
 - **Large Chamber:** 200 Steel, 8 Components (3000W, 600 O2 / 1200 H2 storage)
-- **H2 Fuel Cell:** 75 Steel, 5 Components (1200W output, 40 H2 storage)
+- **Small H2 Fuel Cell:** 75 Steel, 5 Components (1200W output, 40 H2 storage, 1x2)
+- **Large H2 Fuel Cell:** 150 Steel, 8 Components (3000W output, 100 H2 storage, 2x2)
 - **O2 Pump:** 40 Steel, 3 Components (100W consumption)
 
 ## Game Balance
