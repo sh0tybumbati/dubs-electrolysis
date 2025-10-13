@@ -30,6 +30,12 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
   - Provides O2 to enclosed spaces
   - Essential for space travel
 
+- **Gas Storage Tanks** - Buffer production and consumption
+  - Hydrogen tanks: Tiny (100), Small (300), Medium (600), Large (1500)
+  - Oxygen tanks: Tiny (50), Small (150), Medium (300), Large (750)
+  - No power required
+  - Auto-fill from pipe networks
+
 - **Separate Pipe Networks**
   - O2 pipes (cyan/blue)
   - H2 pipes (red/orange)
@@ -88,6 +94,12 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
 - **Small (1x2):** 75 Steel, 4 Components (2400W output, 20 heat/sec)
 - **Medium (2x2):** 125 Steel, 6 Components (4800W output, 40 heat/sec)
 
+*Gas Storage Tanks:*
+- **Tiny (1x1):** 25 Steel, 1 Component (H2: 100 / O2: 50 storage)
+- **Small (2x1):** 50 Steel, 2 Components (H2: 300 / O2: 150 storage)
+- **Medium (2x2):** 100 Steel, 4 Components (H2: 600 / O2: 300 storage)
+- **Large (3x3):** 200 Steel, 6 Components (H2: 1500 / O2: 750 storage)
+
 *Other:*
 - **O2 Pump:** 40 Steel, 3 Components (100W consumption)
 
@@ -109,11 +121,17 @@ A RimWorld mod that adds electrolysis systems for hydrogen fuel cells and oxygen
 - Fuel cells: Efficient, clean, but requires H2 piping
 - Oxygen generators: Powerful but hot, requires O2 piping + cooling
 
+**Storage Strategy:**
+- Electrolysis chambers have limited internal storage
+- Add gas storage tanks to buffer production spikes
+- Allows running fuel cells/generators when electrolysis is off
+- Essential for stable power during brownouts
+
 **Resource Flow:**
 - Water → Electrolysis → H2 + O2
-- H2 → Fuel Cells → Clean Power (no heat)
-- O2 → Oxygen Generators → High Power (with heat)
-- O2 → Oxygen Pumps → Life Support
+- H2 → Storage Tanks → Fuel Cells → Clean Power (no heat)
+- O2 → Storage Tanks → Generators → High Power (with heat)
+- O2 → Storage Tanks → Pumps → Life Support
 
 ## Building from Source
 
