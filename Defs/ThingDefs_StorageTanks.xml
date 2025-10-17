@@ -11,7 +11,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
@@ -61,7 +61,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<damageData>
@@ -111,7 +111,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>
@@ -163,7 +163,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<damageData>
@@ -217,7 +217,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
@@ -267,7 +267,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<damageData>
@@ -317,7 +317,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>
@@ -369,7 +369,7 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/gasTank</texPath>
+			<texPath>Things/Building/Production/FueledSmithy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<damageData>

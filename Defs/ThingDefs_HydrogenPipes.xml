@@ -39,7 +39,6 @@
 			<WorkToBuild>35</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<costList>
 			<Steel>1</Steel>
 		</costList>
@@ -94,7 +93,7 @@
 			</blueprintGraphicData>
 		</building>
 		<drawerType>MapMeshOnly</drawerType>
-		<altitudeLayer>UnderFloor</altitudeLayer>
+		<altitudeLayer>Conduits</altitudeLayer>
 		<passability>Standable</passability>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<statBases>
@@ -102,7 +101,6 @@
 			<WorkToBuild>70</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<costList>
 			<Steel>2</Steel>
 		</costList>

@@ -9,7 +9,7 @@
 		<thingClass>DubsElectrolysis.Building_ElectrolysisChamber</thingClass>
 		<designatorDropdown>ElectrolysisChamber</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/sewageseptic</texPath>
+			<texPath>Things/Building/Production/ElectricSmelter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
@@ -81,7 +81,7 @@
 		<thingClass>DubsElectrolysis.Building_ElectrolysisChamber</thingClass>
 		<designatorDropdown>ElectrolysisChamber</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/waterTreatment</texPath>
+			<texPath>Things/Building/Production/ElectricSmelter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<damageData>
@@ -153,7 +153,7 @@
 		<thingClass>DubsElectrolysis.Building_ElectrolysisChamber</thingClass>
 		<designatorDropdown>ElectrolysisChamber</designatorDropdown>
 		<graphicData>
-			<texPath>DBH/Things/Building/waterTreatment</texPath>
+			<texPath>Things/Building/Production/ElectricSmelter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>
