@@ -8,7 +8,7 @@
 		<description>A life support system that pumps oxygen into enclosed spaces. Essential for maintaining breathable atmosphere in gravship rooms during space travel. Connects to the oxygen pipe network and continuously supplies O2 to the room. Requires Odyssey DLC.</description>
 		<thingClass>DubsElectrolysis.Building_OxygenPump</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Misc/OxygenPump</texPath>
+			<texPath>DBH/Things/Building/Heating/SpacerHeating</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>

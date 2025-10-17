@@ -9,7 +9,7 @@
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
 		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/OxygenGenerator</texPath>
+			<texPath>Things/Building/Power/ChemfuelPoweredGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
@@ -75,7 +75,7 @@
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
 		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/OxygenGenerator</texPath>
+			<texPath>Things/Building/Power/ChemfuelPoweredGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,2)</drawSize>
 			<damageData>
@@ -141,7 +141,7 @@
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
 		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/OxygenGenerator</texPath>
+			<texPath>Things/Building/Power/ChemfuelPoweredGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>

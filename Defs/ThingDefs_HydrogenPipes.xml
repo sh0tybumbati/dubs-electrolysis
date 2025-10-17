@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Hydrogen Pipe (Regular) -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>HydrogenPipe</defName>
+		<label>hydrogen pipe</label>
+		<description>A pipe for transporting hydrogen gas. Connect hydrogen-producing electrolysis chambers to hydrogen-consuming fuel cells and storage tanks.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/PowerConduit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+			<color>(1, 0, 1)</color> <!-- Magenta -->
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+		<uiIconColor>(1, 0, 1)</uiIconColor>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<drawerType>MapMeshOnly</drawerType>
+		<altitudeLayer>Conduits</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<comps>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Hydrogen</gasType>
+				<storageCapacity>0</storageCapacity>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Conduit</li>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Electrolysis</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Underground Hydrogen Pipe -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>HydrogenPipeUnderground</defName>
+		<label>underground hydrogen pipe</label>
+		<description>A hydrogen gas pipe that runs underground, out of sight. More expensive than regular pipes.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/PowerConduitUnderground</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+			<color>(1, 0, 1)</color> <!-- Magenta -->
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+		<uiIconColor>(1, 0, 1)</uiIconColor>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<drawerType>MapMeshOnly</drawerType>
+		<altitudeLayer>UnderFloor</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>70</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>2</Steel>
+		</costList>
+		<comps>
+			<li Class="DubsElectrolysis.CompProperties_GasPipe">
+				<gasType>Hydrogen</gasType>
+				<storageCapacity>0</storageCapacity>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Conduit</li>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Electrolysis</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>
