@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Dub's Electrolysis</name>
+	<name>Dubs Electrolysis</name>
 	<packageId>Sh0tybumbati.DubsElectrolysis</packageId>
 	<author>Sh0tybumbati</author>
 	<url>https://github.com/sh0tybumbati/dubs-electrolysis</url>
@@ -20,16 +20,28 @@
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 	</loadAfter>
-	<description>Adds electrolysis systems to Dub's Bad Hygiene for advanced power and oxygen generation.
+	<description>Adds comprehensive electrolysis systems to Dub's Bad Hygiene for advanced power generation and gas management. Split water into hydrogen and oxygen, then use them for clean power generation or oxygen life support.
 
 Features:
-- Electrolysis chambers split water into hydrogen and oxygen
-- Three sizes: Small (500W), Medium (1500W), Large (3000W)
-- Separate pipe networks for O2 and H2 distribution
-- Hydrogen fuel cells for clean, efficient power generation
-- Oxygen pumps for Odyssey gravship support (optional DLC integration)
-- Automatic shutoff when storage is full
-- Long-term energy storage alternative to chemfuel
+- Electrolysis chambers split water into hydrogen and oxygen gases
+  • Three sizes: Tiny (500W), Standard (1500W), Large (3000W)
+  • Connects to DBH water pipes and custom gas pipe networks
+
+- Physical pipe system for gas distribution
+  • Magenta hydrogen pipes and teal oxygen pipes for easy identification
+  • Regular pipes (1 steel) and underground pipes (2 steel) for both gas types
+  • Separate networks prevent cross-contamination
+
+- Power generation options
+  • Hydrogen fuel cells: Clean, efficient power with no heat or pollution
+  • Oxygen generators: High-output power generation (produces heat, requires cooling)
+
+- Gas storage and distribution
+  • Storage tanks with capacity bar displays
+  • Automatic network balancing across connected buildings
+  • Automatic shutoff when storage is full
+
+- Oxygen pumps for Odyssey gravship life support (optional DLC integration)
 
 Requires Dub's Bad Hygiene. Optional integration with Odyssey DLC for oxygen pump functionality.</description>
 </ModMetaData>
