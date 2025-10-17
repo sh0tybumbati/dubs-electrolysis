@@ -7,6 +7,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,6 +17,9 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        persist-credentials: true
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
@@ -155,6 +161,20 @@ jobs:
         name: DubsElectrolysis-dll
         path: Assemblies/*.dll
         if-no-files-found: warn
+
+    - name: Commit compiled DLL
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add Assemblies/*.dll
+        # Only commit if there are changes
+        if ! git diff --cached --quiet; then
+          git commit -m "Auto-build: Update compiled DLL [skip ci]"
+          git push
+        else
+          echo "No changes to DLL, skipping commit"
+        fi
 
     - name: Create release on tag
       if: startsWith(github.ref, 'refs/tags/')
