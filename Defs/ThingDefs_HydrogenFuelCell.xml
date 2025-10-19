@@ -10,15 +10,9 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<designatorDropdown>HydrogenFuelCell</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/Battery</texPath>
+			<texPath>DubsElectrolysis/Buildings/HydrogenFuelCells/H2CellSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,3)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -77,15 +71,9 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<designatorDropdown>HydrogenFuelCell</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/Battery</texPath>
+			<texPath>DubsElectrolysis/Buildings/HydrogenFuelCells/H2Cell</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,3)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
+			<drawSize>(2,1)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

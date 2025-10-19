@@ -9,12 +9,9 @@
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
 		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/ChemfuelPoweredGenerator</texPath>
+			<texPath>DubsElectrolysis/Buildings/OxygenGenerators/TinyO2Gen</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -75,12 +72,9 @@
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
 		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/ChemfuelPoweredGenerator</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>DubsElectrolysis/Buildings/OxygenGenerators/SmallO2Gen</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,0.6,1.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -141,12 +135,9 @@
 		<thingClass>DubsElectrolysis.Building_OxygenGenerator</thingClass>
 		<designatorDropdown>OxygenGenerator</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Power/ChemfuelPoweredGenerator</texPath>
+			<texPath>DubsElectrolysis/Buildings/OxygenGenerators/MidO2Gen</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,1.6,1.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

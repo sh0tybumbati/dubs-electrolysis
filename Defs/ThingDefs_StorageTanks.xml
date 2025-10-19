@@ -11,12 +11,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankSmal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -61,12 +58,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankSmal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,1.6,0.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -111,12 +105,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankMid</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,1.6,1.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -163,12 +154,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>HydrogenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankLrg</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,2.6,2.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -267,12 +255,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankSmal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,1.6,0.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -317,12 +302,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankMid</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,1.6,1.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -369,12 +351,9 @@
 		<thingClass>DubsElectrolysis.Building_GasStorageTank</thingClass>
 		<designatorDropdown>OxygenTank</designatorDropdown>
 		<graphicData>
-			<texPath>Things/Building/Production/FueledSmithy</texPath>
+			<texPath>DubsElectrolysis/Buildings/GasStorageTanks/GasTankLrg</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
-			<damageData>
-				<rect>(0.2,0.2,2.6,2.6)</rect>
-			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
